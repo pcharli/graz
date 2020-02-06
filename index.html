@@ -21,9 +21,31 @@
 
     <!-- BASE CSS -->
     <link href="css-preview/bootstrap.min.css" rel="stylesheet">
-    <link href="css-preview/style.css" rel="stylesheet">
+	<link href="css-preview/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css-preview/simpleLightbox.css">
 	<link href="css-preview/icon_fonts/css/all_icons.min.css" rel="stylesheet">
-
+	<style>
+		.contentInPopup {
+			padding: 2em;
+		}
+		.slbContent {
+			max-width: 50em;
+			font-size: 16px;
+		}
+		.imageBox {
+			width: 100%;
+			
+		}
+		@media (min-width: 767px) {
+		.imageBox {
+			width: 30%;
+			float:left;
+			margin-right: 1em;
+			
+				
+		}
+}
+	</style>
 </head>
 
 <body>
@@ -75,7 +97,7 @@
 						<i alt="Carnet" class="icon_ribbon"></i>
 					</div>
 					<a
-					 href="index.html">
+					 href="index.html" class="testLink">
 					    <picture>
 							<source type="image/webp" srcset="img-preview/chateau-eggenberg-graz.webp" class="img-fluid">
 					    	<img src="img-preview/chateau-eggenberg-graz.jpg" alt="Demo" class="img-fluid">
@@ -348,9 +370,25 @@
 	
 	<div id="toTop"Top></div><!-- Back to top button -->
 
+
 	<!-- COMMON SCRIPTS -->
     <script src="js-preview/common_scripts.js"></script>
-    <script src="js-preview/functions.js"></script>
+	<script src="js-preview/functions.js"></script>
+	<script src="js-preview/simpleLightbox.js"></script>
+	<script>
+		document.querySelector('.testLink').addEventListener('click', function(e) {
+			e.preventDefault()
+			SimpleLightbox.open({
+    content: `<div class="contentInPopup">
+			<h3 class="attireTitleType3">Le château d'Eggenberg</h3>
+			<img src="img-preview/chateau-eggenberg-graz.webp" class="imageBox">
+			<p>Inscrit au patrimoine mondial de l’UNESCO, c’est le plus grand château de Styrie.</p>
+			<p>Construit en 1625 par Hans Ulrich Von Eggenberg, conseiller impérial de Ferdinand II, sa construction été organisée autour du temps et des saisons : 4 tours pour les 4 saisons, 365 fenêtres pour les jours, 31 pièces à chaque étage pour les mois, 24 salles d’apparat pour les heures, etc.…</p>
+			</div>`,
+    elementClass: 'slbContentEl'
+		});
+		})
+	</script>
 
 </body>
 </html>
