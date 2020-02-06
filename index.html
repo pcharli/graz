@@ -32,7 +32,10 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-4">
-					<img src="img-preview/logo.svg" width="160"  alt="City tours and travel site template" class="logo">
+					<figure class="logo">
+						<img src="img-preview/logo.svg" width="160"  alt="City tours and travel site template" >
+						<figcaption>Wunder von Graz</figcaption>
+					</figure>
 				</div>
 				<div class="col-8">
 					<a href="#" class="btn_1 rounded float-right" target="_parent">S'identifier</a>
@@ -52,8 +55,8 @@
 	<div class="hero_single version_2">
 		<div class="wrapper">
 			<div class="container">
-			<h1>Graz <span>CityTour <br>et <strong>Eurskills 2020</strong> | Autriche</span></h1>
-			<p><a href="#start" class="btn_1">A visiter</a> <a href="#reviews" class="btn_1 outline start">Ce qu'ils en pensent</a></p>
+			<h1>Graz <span>CityTour <br>et <strong>Euroskills 2020</strong> | Autriche</span></h1>
+			<p><a href="#start" class="btn_1 outline">A visiter</a> <a href="#reviews" class="btn_1 start">Ce qu'ils en pensent</a></p>
 			</div>
 		</div>
 	</div>
@@ -68,13 +71,20 @@
 		<div class="row">
 			<div class="col-md-4 col-sm-6 wow fadeInUp faster" data-wow-delay="0.2s">
 				<div class="demo-item">
-					<a href="index.html">
+					<div class=" in-favorites">
+						<i alt="Carnet" class="icon_ribbon"></i>
+					</div>
+					<a
+					 href="index.html">
 					    <picture>
 							<source type="image/webp" srcset="img-preview/chateau-eggenberg-graz.webp" class="img-fluid">
 					    	<img src="img-preview/chateau-eggenberg-graz.jpg" alt="Demo" class="img-fluid">
 						</picture>
+						<div class="description">Si vous vous demandez que faire à Graz, sachez qu’ici, vous retrouverez également plusieurs musées dont le musée de l’archéologie ou le cabinet de la Monnaie, ainsi qu’un grand parc.</div>
 					</a>
+					
 					<h3>Le château d'Eggenberg <span style="color: red">15 €</span></h3>
+					
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 wow fadeInUp faster" data-wow-delay="0.4s">
@@ -84,6 +94,7 @@
 							<source type="image/webp" srcset="img-preview/murinsel-graz.webp" class="img-fluid">
 					    	<img src="img-preview/murinsel-graz.jpg" alt="Demo" class="img-fluid">
 						</picture>
+						<div class="description">Ce bâtiment insolite en forme de coquillage géant, sert à relier les 2 rives de la Mur (la rivière de Graz), et renferme un café et un amphithéâtre.</div>
 					</a>
 					<h3>Murinsel, ou l’île sur la Mur <span style="color: red">Gratuit</span></h3>
 				</div>
@@ -95,6 +106,8 @@
 							<source type="image/webp" srcset="img-preview/abbaye-admont-graz.webp" class="img-fluid">
 					    	<img src="img-preview/abbaye-admont-graz.jpg" alt="Demo" class="img-fluid">
 						</picture>
+						<div class="description">L’abbaye d’Admont est quand à elle célèbre pour posséder la plus grande bibliothèque monastique au monde avec plus de 200.000 ouvrages.
+						</div>
 					</a>
 					<h3>Les bibliothèques de Graz <span style="color: red">Gratuit</span></h3>
 				</div>
@@ -106,6 +119,7 @@
 							<source type="image/webp" srcset="img-preview/toscane-styrienne-graz.webp" class="img-fluid">
 					    	<img src="img-preview/toscane-styrienne-graz.jpg" alt="Demo" class="img-fluid">
 						</picture>
+						<div class="description">En effet, vous pouvez déguster sur place, dans les fameuses « Buschenschenken » (tavernes traditionnelles), de délicieux vins, fromages ou gâteaux traditionnels, sans oublier le « Kürbiskernöl », une huile de pépins de courge à la couleur foncée et au goût prononcé, un incontournable dans la cuisine régionale.</div>
 					</a>
 					<h3>La « Toscane styrienne » <span style="color: red">5 € la dégustation</span></h3>
 				</div>
@@ -114,9 +128,11 @@
 				<div class="demo-item">
 					<a href="index_4.html">
 					    <picture>
+
 							<source type="image/webp" srcset="img-preview/schlossberg-graz.webp" class="img-fluid">
 					    	<img src="img-preview/schlossberg-graz.jpg" alt="Demo" class="img-fluid">
 						</picture>
+						<div class="description">Une fois au sommet, vous découvrirez un magnifique parc, ainsi que de nombreux restaurants et boutiques de souvenirs.</div>
 					</a>
 					<h3>Le Schlossberg <span style="color: red">15 €</span></h3>
 				</div>
@@ -128,6 +144,7 @@
 							<source type="image/webp" srcset="img-preview/landeszeughaus-museum-graz-e1541669762600.webp" class="img-fluid">
 					    	<img src="img-preview/landeszeughaus-museum-graz-e1541669762600.jpg" alt="Demo" class="img-fluid">
 						</picture>
+						<div class="description">Canons, épées, armures, hallebardes, casques, il y en a pour tous les goûts !</div>
 					</a>
 					<h3>Le Musée Landeszeughaus <span style="color: red">9 €</span></h3>
 				</div>
@@ -139,6 +156,7 @@
 							<source type="image/webp" srcset="img-preview/cathedrale-saint-gilles-graz-e1541670070521.webp">
 					    	<img src="img-preview/cathedrale-saint-gilles-graz-e1541670070521.jpg" alt="Demo" class="img-fluid">
 						</picture>
+						<div class="description">À l’intérieur, dirigez-vous vers le choeur, où se situe le fameux et impressionnant orgue, composé de plus de 5 350 tuyaux.</div>
 					</a>
 					<h3>La cathédrale Saint-Gilles de Graz <span style="color: red">Gratuit</span></h3>
 				</div>
@@ -150,6 +168,7 @@
 							<source type="image/webp" srcset="img-preview/hauptplatz-graz-840x554.webp">
 					    	<img src="img-preview/hauptplatz-graz-840x554.jpg" alt="Demo" class="img-fluid">
 						</picture>
+						<div class="description">Conçue au Moyen-âge pour accueillir le marché, elle reste encore de nos jorus le centre névralgique de Graz. Vous pourrez notamment y admirer le Rathaus (l’hôtel de ville) et de nombreux bâtiments historiques aux superbes façades colorées et peintes.</div>
 					</a>
 					<h3>La Hauptplatz <span style="color: red">Gratuit</span></h3>
 				</div>
@@ -161,6 +180,7 @@
 							<source type="image/webp" srcset="img-preview/herrengasse-840x630.webp" class="img-fluid">
 					    	<img src="img-preview/herrengasse-840x630.jpg" alt="Demo" class="img-fluid">
 						</picture>
+						<div class="description">La cour du Landhaushof notamment, avec ses arcades et ses pavés est considérée comme un chef d’œuvre de la renaissance italienne.</div>
 					</a>
 					<h3>Herrengasse <span style="color: red">Gratuit</span></h3>
 				</div>
@@ -172,6 +192,7 @@
 							<source type="image/webp" srcset="img-preview/visiter-Graz-Kunsthaus-840x559.webp" class="img-fluid">
 					    	<img src="img-preview/visiter-Graz-Kunsthaus-840x559.jpg" alt="Demo" class="img-fluid">
 						</picture>
+						<div class="description">Il est situé de l’autre côté de la Mur par rapport au centre historique, vous pouvez donc passer par le Murinsel pour aller le visiter.</div>
 					</a>
 					<h3>Le Kunsthaus Graz <span style="color: red">9 €</span></h3>
 				</div>
@@ -183,6 +204,7 @@
 							<source type="image/webp" srcset="img-preview/visite.webp" class="img-fluid">
 					    	<img src="img-preview/visite.jpg" alt="Demo" class="img-fluid">
 						</picture>
+						<div class="description">En cas de demande spéciale, veuillez nous le faire savoir et nous ferons de notre mieux pour répondre à vos besoins.</div>
 					</a>
 					<h3>Visite privée à pied de Graz avec guide professionnel <span style="color: red">195 € par groupe</span></h3>
 				</div>
