@@ -36,14 +36,25 @@
 			width: 100%;
 			
 		}
+		
+		.logo_startech img {
+			transform: rotate(-90deg);
+			width: 250px;
+			position: fixed;
+			bottom: 60px;
+			left: -49px;
+			display: none;
+		}
 		@media (min-width: 767px) {
 		.imageBox {
 			width: 30%;
 			float:left;
-			margin-right: 1em;
-			
-				
+			margin-right: 1em;				
 		}
+		.logo_startech img {
+			display: block;
+		}
+		
 }
 	</style>
 </head>
@@ -365,6 +376,7 @@
 	<footer>
 		<div class="container margin_30_5 text-center">
 			<p>© 2020 | Cepegra. Développé par <a href="https://cepegra.be">Pierre</a></p>
+			<div class="logo_startech"><img src="img-preview/logo_startechs.png" alt="Logo des Startech's Days"></div>
 		</div>
 	</footer>
 	
